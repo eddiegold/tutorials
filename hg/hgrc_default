@@ -1,0 +1,15 @@
+# example repository config (see "hg help config" for more info)
+[paths]
+default = https://telogis.kilnhg.com/...
+
+[extensions]
+hgext.extdiff =
+purge =
+
+[extdiff]
+cmd.wdiff = diff
+opts.wdiff = -p -U 8 -w -r -N
+cmd.kdiff3 =
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
