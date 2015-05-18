@@ -1,3 +1,4 @@
 yum install ruby -y
 gem install rake
-rake
+rake yum:basic
+rake setup:all
