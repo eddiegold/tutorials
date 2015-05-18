@@ -1,4 +1,4 @@
-task :default => ["setup:bashrc", "yum:all"] do
+task :default => ["yum:all", "setup:all"] do
 end
 
 namespace :setup do
@@ -10,6 +10,10 @@ namespace :setup do
   desc "setting up default vimrc"
   task :vimrc  do
     sh "cp -b ./vim/vimrc.default ~/.vimrc"
+  end
+
+  desc "setting up all default configs"
+  task :all => [:vimrc, :bashrc]  do
   end
 
 end
