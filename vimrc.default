@@ -1,0 +1,23 @@
+colorscheme pablo "readable colorscheme
+
+"highlighing selected row
+set cursorline
+hi CursorLine cterm=none ctermbg=darkred ctermfg=white
+
+""" Tabs
+set tabstop=2  " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set expandtab       " tabs are spaces
+
+""" UI Config
+set showcmd   " show command in bottom bar
+set wildmenu            " visual autocomplete for command menu
+set showmatch           " highlight matching [{()}]
+set number "set row numbers
+
+""" Searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+
+
