@@ -29,6 +29,10 @@ namespace :yum do
     sh "sudo yum install -y git hg"
   end
 
+  desc "yum install nmap (netcat) and bind-utils (dig)"
+  task :network do
+    sh "sudo yum install -y git hg"
+  end
 
   desc "yum install all"
   task :all => [:update, :basic, :db, :dev, :vcs] do
