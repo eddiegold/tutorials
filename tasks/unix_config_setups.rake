@@ -14,8 +14,13 @@ namespace :setup do
     sh "cat history/*.history >> ~/.bash_history"
   end
 
+  desc "overwrite git config file"
+  task :git_config  do
+    sh "cp -f git/gitconfig ./.git/config"
+  end
+
   desc "setting up all default configs"
-  task :all => [:vimrc, :bashrc, :history]  do
+  task :all => [:vimrc, :bashrc, :history, :git_config]  do
   end
 
 end
