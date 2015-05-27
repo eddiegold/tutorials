@@ -16,7 +16,7 @@ namespace :setup do
 
   desc "overwrite git config file"
   task :git_config  do
-    sh "cp -f git/gitconfig ./.git/config"
+    sh "sudo cp -f git/gitconfig ./.git/config"
   end
 
   desc "setting up all default configs"
