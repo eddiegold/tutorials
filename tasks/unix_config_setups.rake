@@ -11,7 +11,7 @@ namespace :setup do
 
   desc "augment ~/.bash_history with saved history files"
   task :history  do
-    sh "cat history/*.history >> ~/.bash_history"
+    sh "cat history/*.history !>> ~/.useful_history"
   end
 
   desc "overwrite git config file"
