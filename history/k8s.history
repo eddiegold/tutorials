@@ -1,1 +1,1 @@
-kubectl get endpoints
+history -s kubectl get endpoints

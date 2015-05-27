@@ -1,1 +1,1 @@
-ls -lF 
+history -s ls -lF 
