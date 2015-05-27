@@ -19,7 +19,7 @@ namespace :yum do
 
   desc "yum install make gcc..."
   task :dev do
-    sh "sudo yum install -y  gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel"
+    sh "sudo yum install -y  gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel ruby-devel"
 
     #sh "sudo yum install -y http://mirror.centos.org/centos/7/os/x86_64/Packages/ruby-devel-2.0.0.598-24.el7.x86_64.rpm "
   end
