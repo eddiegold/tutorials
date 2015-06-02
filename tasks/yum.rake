@@ -31,9 +31,9 @@ namespace :yum do
     sh "#{YUM_CMD} git hg"
   end
 
-  desc "yum install nmap (netcat) and bind-utils (dig)"
+  desc "yum install nmap (netcat) and bind-utils (dig), netstat (nettools)"
   task :network do
-    sh "#{YUM_CMD} git hg"
+    sh "#{YUM_CMD} nmap bind-utils net-tools"
   end
 
   desc "yum install all"
