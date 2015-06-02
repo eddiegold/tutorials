@@ -7,6 +7,8 @@ namespace :setup do
   desc "setting up default vimrc"
   task :vimrc  do
     sh "cp -b ./vim/vimrc.default ~/.vimrc"
+    sh "rm -rf  ~/.vim/bundle/Vundle.vim; git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
+    sh "vim +PluginInstall +qall"
   end
 
   desc "augment ~/.bash_history with saved history files"
