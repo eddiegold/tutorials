@@ -1,3 +1,16 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'https://github.com/Lokaltog/vim-easymotion'
+Plugin 'https://github.com/scrooloose/nerdtree'
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Put your non-Plugin stuff after this line
+
 colorscheme pablo "readable colorscheme
 
 "highlighing selected row
@@ -19,5 +32,7 @@ set number "set row numbers
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
-
+" vim plugins
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
